@@ -28,13 +28,22 @@ public class App
 
             String stringModifica = stringRicevuta.toUpperCase();
             out.writeBytes(stringModifica + "\n");
-
-            server.close();
             s.close();
+            /* 
+            while(true){
+                if(stringRicevuta.equals("q")){
+                    out.writeBytes("yes");
+                    break;
+                }
+            }
+*/
+            server.close();
+            
 
         }catch (Exception e){
             System.out.println(e.getMessage());
-            System.out.println("Errore durante l'instanziamento.");
+            System.out.println("Errore durante l'instanza.");
             System.exit(1);
         }
+    }
 }
