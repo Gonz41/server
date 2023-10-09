@@ -13,7 +13,7 @@ import java.net.Socket;
 public class App 
 {
     public static void main( String[] args )
-    {/*
+    {
         try{
             ServerSocket server = new ServerSocket(3000);
 
@@ -37,6 +37,4 @@ public class App
             System.out.println("Errore durante l'instanziamento.");
             System.exit(1);
         }
-        */
-    }
 }
